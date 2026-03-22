@@ -7,6 +7,7 @@ Simulates the classic C64 BASIC boot screen with an AI-powered READY prompt.
 import curses
 import sys
 import json
+import os
 import urllib.request
 import urllib.error
 import textwrap
@@ -14,7 +15,7 @@ import time
 import threading
 import argparse
 
-OLLAMA_URL = "http://localhost:11434/api/generate"
+OLLAMA_URL = os.environ.get("OLLAMA_URL", "http://localhost:11434/api/generate")
 DEFAULT_MODEL = "llama3.2"
 
 C64_BLUE_BG  = 1   # background
