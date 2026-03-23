@@ -30,7 +30,7 @@ services:
     restart: "no"
 
   c64llama:
-    build: .
+    image: ghcr.io/flabber1835/turbo-umbrella:latest
     container_name: c64llama
     stdin_open: true   # docker run -i
     tty: true          # docker run -t  (required for curses)
