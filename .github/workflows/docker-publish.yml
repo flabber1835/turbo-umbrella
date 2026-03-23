@@ -2,7 +2,7 @@ name: Build and Push to GHCR
 
 on:
   push:
-    branches: ["main"]
+    branches: ["main", "claude/c64-ui-llama-rpi-ZDKtV"]
   workflow_dispatch:
 
 env:
